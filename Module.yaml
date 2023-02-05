@@ -9,7 +9,7 @@ type: 'Processing'
 image:
   name: 'weevenetwork/scikit-learn'
   tag: 'v1.0.0'
-  homepage: 'https://hub.docker.com/weevenetwork/scikit-learn'
+  homepage: 'https://hub.docker.com/r/weevenetwork/scikit-learn'
 repository: 'https://github.com/weeve-modules/scikit-learn'
 envs:
   - name: Model Filename
