@@ -28,7 +28,7 @@ envs:
     dependencies: []
   - name: Model Filepath
     key: MODEL_FILEPATH
-    description: If model is stored in the local filesystem (above field for URL was left empty), the provide a path to the folder containing the model.
+    description: If model is stored in the local filesystem (above field for URL was left empty), then provide a path to the folder containing the model.
     value: '/Users/Desktop/ml-model'
     type: 'text'
     options: []
