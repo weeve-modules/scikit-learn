@@ -15,8 +15,13 @@ log = getLogger("module")
 ORDERED_LABELS = [label.strip() for label in os.getenv("ORDERED_LABELS", "").split(',')]
 OUTPUT_LABEL = os.getenv("OUTPUT_LABEL", "")
 
-log.info(f"Loading the model {os.getenv('MODEL_FILENAME')} ...")
-MODEL = joblib.load(f"model/{os.getenv('MODEL_FILENAME')}")
+log.info("Loading the model ...")
+if os.getenv("MODEL_DOWNLOAD_URL"):
+    log.debug("Loading the model downloaded into the docker container: model/downloaded_model.sav ...")
+    MODEL = joblib.load("model/downloaded_model.sav")
+else:
+    log.debug(f"Loading the model mounted by volume to the docker container: {os.getenv('MODEL_FILEPATH')} ...")
+    MODEL = joblib.load(os.getenv('MODEL_FILEPATH'))
 log.info("Model loaded successfully.")
 
 def module_main(received_data: any) -> [any, str]:
