@@ -20,3 +20,4 @@ jobs:
       - name: Install QEMU binaries
         run: docker run --privileged --rm tonistiigi/binfmt --install all
       - name: Build and push using make
+        run: make create_and_push_multi_platform
