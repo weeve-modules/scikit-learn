@@ -31,7 +31,7 @@ The following module configurations can be provided in a data service designer s
 | Model Download URL | MODEL_DOWNLOAD_URL    | string | If model is stored online, then provide a download URL to parse the model. Leave empty field to search for the model in the local filesystem (see Model Filepath configuration field).                                                     |
 | Model Filepath     | MODEL_FILEPATH        | string | If model is stored in the local filesystem of the edge device or node (above field for the URL was left empty), then provide a path to the model file. |
 | Ordered Labels     | ORDERED_LABELS        | string | Input data labels in the order of feeding into the model. Later a numpy array will be created to feed that data into the model in the given order.                                                |
-| Output Label       | OUTPUT_LABEL          | string | The output label at which data is dispatched.                                                                                                                                                     |
+| Output Label       | OUTPUT_LABEL          | string | The output label at which data is dispatched.                                                                                                                                                    |
 
 ### Set by the weeve Agent on the edge-node
 
