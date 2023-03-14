@@ -1,14 +1,14 @@
 displayName: 'Scikit Learn'
 moduleName: 'scikit-learn'
 description: 'Use your scikit-learn model.'
-versionName: 'v1.0.0'
+versionName: 'v1.0.1'
 isPublic: true
 categories:
   - 'Data Science'
 type: 'Processing'
 image:
   name: 'weevenetwork/scikit-learn'
-  tag: 'v1.0.0'
+  tag: 'v1.0.1'
   homepage: 'https://hub.docker.com/r/weevenetwork/scikit-learn'
 repository: 'https://github.com/weeve-modules/scikit-learn'
 envs:

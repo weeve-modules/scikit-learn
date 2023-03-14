@@ -3,7 +3,7 @@
 |           |                                                                                 |
 | --------- | ------------------------------------------------------------------------------- |
 | Name      | Scikit-Learn                                                                    |
-| Version   | v1.0.0                                                                          |
+| Version   | v1.0.1                                                                          |
 | DockerHub | [weevenetwork/scikit-learn](https://hub.docker.com/r/weevenetwork/scikit-learn) |
 | Authors   | Jakub Grzelak                                                                   |
 
